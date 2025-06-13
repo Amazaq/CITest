@@ -1,13 +1,18 @@
 package org.example;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
+@Epic("SX2416157wjn-CITest")
+@Feature("CITest")
 public class NumberCalculatorTest {
     @Test
+    @Story("test1")
     void testCalculateSquare_bigger_0() {
         int number = 5;
         int expected = 25;
@@ -17,6 +22,7 @@ public class NumberCalculatorTest {
         System.out.println("测试1 成功！");
     }
     @Test
+    @Story("test2")
     void testCalculateSquare_eqaul_0() {
         int number = 0;
         int expected = 0;
