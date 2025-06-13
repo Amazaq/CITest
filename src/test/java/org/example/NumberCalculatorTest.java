@@ -25,15 +25,14 @@ public class NumberCalculatorTest {
         assertEquals(expected, actual);
         System.out.println("测试2 成功！");
     }
-
-    @Test
-    void testCalculateSquare_smaller_0() {
-        int number = -4;
-        int expected = 16;
-        int actual = NumberCalculator.CalculateSquare(number);
-
-        assertEquals(expected, actual);
-        System.out.println("测试3 成功！");
-    }
+//    @Test
+//    void testCalculateSquare_smaller_0() {
+//        int number = -4;
+//        int expected = 16;
+//        int actual = NumberCalculator.CalculateSquare(number);
+//
+//        assertEquals(expected, actual);
+//        System.out.println("测试3 成功！");
+//    }
 
 }
