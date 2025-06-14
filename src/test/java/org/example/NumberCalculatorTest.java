@@ -3,7 +3,7 @@ package org.example;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class NumberCalculatorTest {
     @Test
     @Story("test1")
-    void testCalculateSquare_bigger_0() {
+    public void testCalculateSquare_bigger_0() {
         int number = 5;
         int expected = 25;
         int actual = NumberCalculator.CalculateSquare(number);
@@ -23,7 +23,7 @@ public class NumberCalculatorTest {
     }
     @Test
     @Story("test2")
-    void testCalculateSquare_eqaul_0() {
+    public void testCalculateSquare_eqaul_0() {
         int number = 0;
         int expected = 0;
         int actual = NumberCalculator.CalculateSquare(number);
